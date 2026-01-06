@@ -1,8 +1,18 @@
+import os
+os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
+os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0"
+
 import streamlit as st
 import json
 import random
 from transformers import pipeline
 
+st.set_page_config(
+    page_title="Sustainable Digitalization Bot",
+    layout="centered"
+)
+
+os.environ["HUGGINGFACE_HUB_TOKEN"] = st.secrets["HF_TOKEN"]
 # ----------------------------
 # CONFIG
 # ----------------------------
@@ -13,7 +23,12 @@ MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct"
 # ----------------------------
 @st.cache_resource
 def load_model():
-    return pipeline("text-generation", model=MODEL_NAME, device=-1)
+    return pipeline(
+        "text-generation",
+        model="Qwen/Qwen2.5B-0.5B-Instruct",
+        device=-1,
+        trust_remote_code=True
+    )
 
 llm = load_model()
 
@@ -137,4 +152,5 @@ Summarize the key learning in 3–4 lines.
             summary = generate(summary_prompt)
             st.markdown("### Learning Summary")
             st.write(summary)
+
 
