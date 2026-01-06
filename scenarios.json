@@ -1,0 +1,90 @@
+{
+  "version": "1.0",
+  "subject": "Sustainable Digitalization",
+  "scenarios": [
+    {
+      "id": "SCEN-001",
+      "title": "The E-Waste Circularity Challenge",
+      "difficulty": "Undergraduate",
+      "context": "A multinational corporation is upgrading its entire digital infrastructure (10,000+ devices). The IT department wants to buy the newest, most energy-efficient models and simply recycle the old ones through a third-party vendor.",
+      "problem_statement": "Recycling is energy-intensive and often leads to toxic leakage. How would you design a circular strategy that goes beyond simple recycling?",
+      "learning_objectives": ["Circular Economy", "E-waste management", "Life-cycle thinking"],
+      "ai_hints": [
+        "Ask about the energy cost of raw material extraction for new devices.",
+        "Suggest looking into 'Product-as-a-Service' models.",
+        "Mention the hierarchy of waste: Refurbish > Reuse > Recycle."
+      ],
+      "success_criteria": "The student must prioritize life-extension or refurbishment over immediate recycling."
+    },
+    {
+      "id": "SCEN-002",
+      "title": "The AI Power Paradox",
+      "difficulty": "Postgraduate",
+      "context": "A city council implements an AI-driven traffic system to reduce vehicle emissions by 15%. However, the real-time processing doubles the electricity consumption of the local data center.",
+      "problem_statement": "Evaluate the net environmental impact. Is this a successful sustainable digitalization project? How could the energy footprint of the AI be mitigated?",
+      "learning_objectives": ["Rebound Effect", "Green AI", "Net Carbon Impact"],
+      "ai_hints": [
+        "Encourage the student to calculate the trade-off between fuel saved and electricity consumed.",
+        "Mention Edge Computing as a way to reduce data center load.",
+        "Ask if 'smaller' models could achieve similar results with less power."
+      ],
+      "success_criteria": "The student must acknowledge the 'Rebound Effect' and propose architectural optimizations for the AI."
+    },
+    {
+      "id": "SCEN-003",
+      "title": "The Digital Agriculture Divide",
+      "difficulty": "Undergraduate",
+      "context": "A development agency introduces 'Precision Farming' via a high-end mobile app to help rural farmers optimize water usage. However, only the wealthiest 10% of farmers have smartphones capable of running the app.",
+      "problem_statement": "The project is failing to reach those who need it most. How do you redesign this digital intervention to be socially sustainable?",
+      "learning_objectives": ["Social Sustainability", "Digital Divide", "Inclusive Design"],
+      "ai_hints": [
+        "Ask about low-tech alternatives like SMS or USSD.",
+        "Discuss community-shared hardware models.",
+        "Challenge the student on data privacy for non-literate users."
+      ],
+      "success_criteria": "The student must propose a solution that addresses accessibility and equity, not just technological efficiency."
+    },
+    {
+      "id": "SCEN-004",
+      "title": "The Dark Data Cleanup",
+      "difficulty": "Postgraduate",
+      "context": "A logistics firm realizes that 80% of their stored data (old sensor logs, CCTV footage) is 'Dark Data'—it is never used but stays on live, cooled servers 24/7.",
+      "problem_statement": "Management is hesitant to delete data 'just in case' they need it for future AI training. Propose a data governance policy that balances future-proofing with energy efficiency.",
+      "learning_objectives": ["Data Governance", "Carbon Footprint of Storage", "Minimalist Data Design"],
+      "ai_hints": [
+        "Suggest 'Cold Storage' vs 'Hot Storage' tiers.",
+        "Mention the concept of 'Data Hygiene'.",
+        "Ask how much carbon is emitted by 1TB of unused data per year."
+      ],
+      "success_criteria": "The student must balance the utility of Big Data with the necessity of reducing digital hoarding."
+    },
+    {
+      "id": "SCEN-005",
+      "title": "Blockchain Traceability vs. Energy",
+      "difficulty": "Postgraduate",
+      "context": "A fashion brand wants to use a Proof-of-Work blockchain to prove their cotton is ethically sourced. This will provide transparency but increase their corporate carbon footprint significantly.",
+      "problem_statement": "Is the trade-off for transparency worth the energy cost? Suggest an alternative digital architecture that maintains trust without high emissions.",
+      "learning_objectives": ["Blockchain Sustainability", "Consensus Mechanisms", "Supply Chain Transparency"],
+      "ai_hints": [
+        "Ask about the difference between Proof-of-Work and Proof-of-Stake.",
+        "Mention 'Centralized vs Decentralized' trust models.",
+        "Question if blockchain is even the right tool for this specific problem."
+      ],
+      "success_criteria": "The student should suggest more efficient ledger technologies (e.g., PoS) or justify the environmental cost with significant social gains."
+    },
+    {
+      "id": "SCEN-006",
+      "title": "The Smart City Energy Poverty Risk",
+      "difficulty": "Postgraduate",
+      "context": "An automated AI system is deployed to manage neighborhood energy loads. It prioritizes energy distribution based on 'highest efficiency' algorithms, which inadvertently cuts power to older, poorly insulated homes during peak hours.",
+      "problem_statement": "The algorithm is technically efficient but socially harmful. How do you rewrite the optimization goals of the AI to include social justice?",
+      "learning_objectives": ["Algorithmic Bias", "Social Sustainability", "Energy Justice"],
+      "ai_hints": [
+        "Ask how 'efficiency' is being defined in the code.",
+        "Suggest 'Equity-weighted' distribution models.",
+        "Discuss the importance of human-in-the-loop oversight."
+      ],
+      "success_criteria": "The student must identify the bias and propose a multi-objective optimization that includes social equity."
+    }
+  ]
+}
